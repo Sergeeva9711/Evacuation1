@@ -21,22 +21,7 @@ namespace Evacuation.Web
 
            // bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
            //           "~/Scripts/neon/bootstrap.js",
-           //           "~/Scripts/respond.js"));
-
-           // bundles.Add(new ScriptBundle("~/bundles/myscript").Include(
-           //     "~/Scripts/neon/main-gsap.js", "~/Scripts/neon/jquery-ui-1.10.3.minimal.min.js",
-           //     "~/Scripts/neon/joinable.js", "~/Scripts/neon/resizeable.js",
-           //     "~/Scripts/neon/neon-api.js", "~/Scripts/neon/neon-custom.js",
-           //     "~/Scripts/neon/neon-demo.js"));
-
-
-           //bundles.Add(new StyleBundle("~/Content/css").Include(
-           //           "~/Content/neon/jquery-ui-1.10.3.custom.min.css",
-           //           "~/Content/neon/entypo.css",
-           //           "~/Content/neon/bootstrap.css", "~/Content/neon/neon-core.css",
-           //           "~/Content/neon/neon-theme.css", "~/Content/neon/neon-forms.css",
-           //           "~/Content/neon/custom.css", "~/Content/neon/black.css",
-           //           "~/Content/site.css"));
+           //           "~/Scripts/respond.js"));          
 
 
             var bundle = new StyleBundle("~/assets/js/jquery-ui/css/no-theme/virtual.css");
@@ -59,45 +44,26 @@ namespace Evacuation.Web
                 "~/assets/css/neon-theme.css",
                 "~/assets/css/neon-forms.css",
                 "~/assets/css/custom.css",
-                "~/assets/js/select2/select2.css",
-                "~/assets/js/vertical-timeline/css/component.css"
+                "~/assets/js/select2/select2.css"
             );
-            bundles.Add(bundle);
-
+            bundles.Add(bundle);                
+                 
+                
             var bundle1 = new ScriptBundle("~/assests/js/virtual.js");
             bundle1.Include(
+                "~/assets/js/jquery-1.11.0.min.js",
+                "~/assets/js/bootstrap.js",
                 "~/assets/js/neon-custom.js",
-                "~/assests/js/jquery-1.11.0.min.js"                
+                "~/assets/js/gsap/main-gsap.js",
+                "~/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js",
+                "~/assets/js/joinable.js",
+                "~/assets/js/resizeable.js",
+                "~/assets/js/neon-api.js",
+                "~/assets/js/jquery.validate.min.js",
+                "~/assets/js/neon-login.js",
+                "~/assets/js/neon-demo.js"
                 );
             bundles.Add(bundle1);
-
-            //bundle1 = new ScriptBundle("~/assets/js/gsap/virtual.js");
-            //bundle1.Include("~/assets/js/gsap/main-gsap.js");
-            //bundles.Add(bundle1);            
-
-            //< script src = "assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" ></ script >  
-
-            //< script src = "assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js" ></ script >       
-            //< script src = "assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js" ></ script >        
-            //< script src = "assets/js/jquery.sparkline.min.js" ></ script >         
-            //< script src = "assets/js/rickshaw/vendor/d3.v3.js" ></ script >          
-            //< script src = "assets/js/rickshaw/rickshaw.min.js" ></ script >           
-
-
-            //"~/assests/js/neon-custom.js",
-            //,
-            //"~/assets/js/bootstrap.js",
-            //"~/assets/js/joinable.js",
-            //"~/assets/js/resizeable.js",
-            //"~/assets/js/neon-api.js",
-            //"~/assets/js/jquery.sparkline.min.js",
-            //"~/assets/js/raphael-min.js",
-            //"~/assets/js/morris.min.js",
-            //"~/assets/js/toastr.js",
-            //"~/assets/js/neon-custom.js",
-            //"~/assets/js/neon-demo.js"                
-
-
         }
     }
 }

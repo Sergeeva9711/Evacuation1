@@ -9,32 +9,27 @@ using System.Threading.Tasks;
 namespace Evacuation.Dal.Entities
 {
     public class Project
-    {
-        private DateTime data_time = DateTime.Now;
+    {       
 
         public int ProjectID { get; set; }
+        
         public string Name { get; set; }
 
         [DataType(DataType.DateTime)]
-        public DateTime DataCreation {
-            get
-            {
-                return data_time;
-            }
-            set
-            {
-                data_time = value;
-            }
-        }  
-
+        public DateTime DataCreation { get; set; }        
+        
         public int UserID { get; set; }     
-        public User User { get; set; }
+        private User User { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime DataStrart { get; set; }
-
+        
         [DataType(DataType.Date)]
         public DateTime DataEnd { get; set; }
         
+        public byte[] Image { get; set; }        
+
+        public bool IsDeleted { get; set; }
+
     }
 }

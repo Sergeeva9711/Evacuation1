@@ -55,5 +55,10 @@ namespace Evacuation.Bll.Services
         {
             return database.ContextUnitOfWork.Projects.GetAll();
         }
+
+        public List<Project> GetProjects(int id)
+        {
+            return database.ContextUnitOfWork.Projects.GetProjects(id);
+        }
     }
 }
